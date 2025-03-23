@@ -1,0 +1,52 @@
+/* --------------------------- *\
+ * #Google Fonts 
+\* --------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+::selection {
+  background: var(--yellow-dark);
+  color: var(--white);
+}
+
+/* --------------------------- *\
+ * #root
+\* --------------------------- */
+
+:root {
+  --primary-color: #4262ff;
+  --yellow: #ffd02f;
+  --yellow-dark: #ff9d48;
+  --white: #ffffff;
+  --black: #000000;
+  --blue-dark: #050038;
+
+  /* font weight */
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: var(--fw-400);
+  text-align: center;
+  margin-top: 10rem;
+  font-size: 4rem;
+}
