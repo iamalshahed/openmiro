@@ -14,6 +14,7 @@
     --- link custom css
     -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive/responsive.min.css">
 
     <!--  
     --- font awesome
@@ -23,7 +24,136 @@
 </head>
 <body>
 
-    <h1>OpenMiro</h1>
+    <!--  
+    --- hero section
+    -->
+    <section class="hero">
+        <header>
+            <nav>
+                <!-- nav left -->
+                <div class="nav__left">
+                    <a href="/" class="nav__logo">
+                        <img src="./assets/images/logo.webp" alt="Miro Logo">
+                    </a>
+
+                    <ul class="nav__list" id="nav__list">
+                        <li>
+                            <a href="#">Product <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#">Solutions <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#">Resources <span><i class="fa-solid fa-chevron-down"></i></span></a>
+                        </li>
+
+                        <li>
+                            <a href="#">Enterprise</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+
+                        <li class="close__bar">
+                            <i class="fa-solid fa-xmark" id="close__bar"></i>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- nav right -->
+                <div class="nav__right">
+                    <ul>
+                        <li>
+                            <a href="#"><span><i class="fa-solid fa-earth-americas"></i></span> EN</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Sales</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                        </li>
+                        <li>
+                            <button type="button" class="sign__up">Sign up free <span>→</span></button>
+                        </li>
+
+                        <div class="mobile">
+                            <i class="fa-solid fa-bars" id="bar"></i>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- hero-content -->
+        <div class="hero__content">
+            <div class="hero__text">
+                <div class="heading">
+                    <h1>Take ideas from <br> better to best</h1>
+                    <p>
+                        Miro is your team's visual platform to connect, collaborate, and create — together.
+                    </p>
+                </div>
+
+                <div class="signmup__free">
+                    <form action="#">
+                        <input type="text" placeholder="Enter your work email" required>
+                        <button type="submit">Sign up free →</button>
+                    </form>
+                    <p>Collaborate with your team within minutes</p>
+                </div>
+
+                <div class="review">
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p>Based on 5149+ reviews:</p>
+                    </div>
+
+                    <div class="get__app">
+                        <img src="./assets/images/get-app-capterra.webp" alt="Get App">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__banner">
+                <img src="./assets/images/banners/header-banner.webp" alt="Banner">
+            </div>
+        </div>
+    </section>
+
+
+    <!--  
+    --- trusted by
+    -->
+    <section class="trusted__by">
+        <h2>Trusted by 45M+ users</h2>
+        <div class="brands">
+            <div class="brand_logo">
+                <img src="./assets/images/brands/walmart.webp" alt="Brand">
+            </div>
+            <div class="brand_logo">
+                <img src="./assets/images/brands/cisco.webp" alt="Brand">
+            </div>
+            <div class="brand_logo">
+                <img src="./assets/images/brands/volvo.webp" alt="Brand">
+            </div>
+            <div class="brand_logo">
+                <img src="./assets/images/brands/deloitte.webp" alt="Brand">
+            </div>
+            <div class="brand_logo">
+                <img src="./assets/images/brands/okta.webp" alt="Brand">
+            </div>
+        </div>
+    </section>
 
 
 
