@@ -50,3 +50,106 @@ h1 {
   margin-top: 10rem;
   font-size: 4rem;
 }
+/* join today design */
+.join-today{
+  width: 100%;
+  text-align: center;
+  padding: 5rem 6rem;
+}
+.users-div{
+  background-color: #050038;
+  padding: 7.5rem 1.25rem;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.users-div h2{
+  font-size: 3rem;
+  font-weight: var(--fw-400);
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.users-div p{
+  color:rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+.underline p{
+  margin-bottom: 0;
+}
+.underline hr{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 30%;
+  margin: 0 auto;
+  height: 2px;  
+  border: none;
+  margin-bottom: 2rem;
+}
+.sign-up-free{
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: none;
+  transition: all 0.3s;
+}
+.sign-up-free:hover{
+  background-color:rgba(66, 98, 255, 0.7) ;
+}
+/* responsive design*/
+@media only screen and (min-width:320px) and (max-width:767px) {
+  .join-today{
+    padding: 0;
+  }
+  .users-div{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .underline hr{
+    width: 60%;
+  }
+  
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .join-today{
+    padding: 0;
+  }
+  .users-div{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .underline hr{
+    width: 50%;
+  }
+  
+}
+@media only screen and (min-width:992px) and (max-width:1199px){
+  .join-today{
+    padding: 0;
+  }
+  .users-div{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .underline hr{
+    width: 40%;
+  }
+}
+@media only screen and (min-width:1200px) and (max-width:1400px){
+  .join-today{
+    padding: 0;
+  }
+  .users-div{
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .underline hr{
+    width: 30%;
+  }
+}
