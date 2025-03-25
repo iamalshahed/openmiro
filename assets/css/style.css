@@ -44,9 +44,142 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-h1 {
-  font-weight: var(--fw-400);
+
+
+.collaborate {
+  width: 90%;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 10rem;
-  font-size: 4rem;
+
+  & .collaborateHead {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  & .rotate {
+    background-color: #FFD02F;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 15px;
+    transform: rotate(14deg);
+    border-radius: 10px;
+    margin: 2rem 0rem 2rem 19rem;
+  }
+
+  & h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #050038;
+  }
+
+  & .collaborateItem {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  & .cItem {
+    max-width: 350px;
+    text-align: left;
+
+    & h4 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color: #050038;
+    }
+
+    & p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #05003899;
+
+      & a {
+        color: #4262FF;
+      }
+    }
+  }
+
+  & .cBtn {
+    color: #fff;
+    background-color: #4262FF;
+    width: 11rem;
+    font-size: 18px;
+    padding: 1rem;
+    border-radius: 40px;
+    margin: 2rem auto 0;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .collaborateHead {
+    & {
+      max-width: 450px;
+    }
+
+    & h2 {
+      font-size: 2.2rem;
+    }
+
+    & .rotate {
+      margin: 2rem 0rem 2rem 12rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .collaborate {
+    width: 400px;
+  }
+
+  .collaborateHead {
+    & .rotate {
+      margin: 2rem 0rem 2rem 11rem;
+    }
+  }
+
+  .collaborateHead h2 {
+    font-size: 2rem;
+  }
+
+  .collaborateItem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cItem {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collaborateHead {
+    & h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .cItem {
+    & h4 {
+      font-size: 1.3rem;
+    }
+
+    & p {
+      font-size: 14px;
+    }
+  }
+
+  .cBtn {
+    width: 9rem;
+    font-size: 16px;
+  }
 }
