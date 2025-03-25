@@ -834,8 +834,8 @@ nav {
       position: relative;
       .work_image {
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        height: 50vh;
       }
       .work_description {
         position: absolute;
@@ -845,7 +845,10 @@ nav {
         row-gap: 5px;
         justify-content: center;
         align-items: center;
-
+        div {
+          text-align: center;
+          margin-block-end: 5px;
+        }
         span {
           font-size: 18px;
           color: var(--blue-dark);
@@ -874,6 +877,7 @@ nav {
     }
   }
 }
+
 #workList {
   .wrapper_content {
     padding-inline: calc(5.357% / 2);
@@ -938,7 +942,7 @@ nav {
       }
       .right {
         width: 100%;
-        img {
+        & img {
           object-fit: cover;
           width: 100%;
           height: auto;
@@ -947,11 +951,11 @@ nav {
     }
   }
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .wrapper_content {
     height: 70vh;
   }
-}
+} */
 /* Responsive Desktop content */
 @media only screen and (min-width: 1024px) {
   .wrapper {
@@ -988,8 +992,6 @@ nav {
 }
 /* mdatikulislam41 start */
 
-
-
 /*---------------------Team CSS Section Start------------------*/
 #teamList {
   width: 100%;
@@ -1000,7 +1002,7 @@ nav {
 }
 
 .wrapper-team {
-  max-width: 1000px; 
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
@@ -1112,7 +1114,6 @@ nav {
   max-width: 650px;
   border-radius: 12px;
 }
-
 
 /*--------------------- Responsive Styles for Team Section Start ---------------------*/
 
@@ -1301,10 +1302,7 @@ nav {
   }
 }
 
-
 /*---------------------Team CSS Section End------------------*/
-
-
 
 /*---------------------Trust Section CSS Start------------------*/
 
@@ -1352,12 +1350,12 @@ nav {
 }
 @media (max-width: 768px) {
   .trust-stats {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
   .trust-stats {
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
