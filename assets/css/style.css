@@ -63,6 +63,7 @@ body {
   /* position: relative;
   overflow: hidden; */
   position: relative;
+  /* overflow: hidden; */
   font-family: "Inter", sans-serif;
 }
 /* --------------------------- *\
@@ -833,8 +834,8 @@ nav {
       position: relative;
       .work_image {
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        height: 50vh;
       }
       .work_description {
         position: absolute;
@@ -844,7 +845,10 @@ nav {
         row-gap: 5px;
         justify-content: center;
         align-items: center;
-
+        div {
+          text-align: center;
+          margin-block-end: 5px;
+        }
         span {
           font-size: 18px;
           color: var(--blue-dark);
@@ -873,6 +877,7 @@ nav {
     }
   }
 }
+
 #workList {
   .wrapper_content {
     padding-inline: calc(5.357% / 2);
@@ -937,7 +942,7 @@ nav {
       }
       .right {
         width: 100%;
-        img {
+        & img {
           object-fit: cover;
           width: 100%;
           height: auto;
@@ -946,11 +951,11 @@ nav {
     }
   }
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .wrapper_content {
     height: 70vh;
   }
-}
+} */
 /* Responsive Desktop content */
 @media only screen and (min-width: 1024px) {
   .wrapper {
@@ -986,3 +991,372 @@ nav {
   }
 }
 /* mdatikulislam41 start */
+
+/*---------------------Team CSS Section Start------------------*/
+#teamList {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-team {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.team-content h4 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--blue-dark);
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: flex-start;
+}
+
+.team-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.teams {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.teams button {
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: none;
+}
+
+.teams button:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.team-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 40px;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.left {
+  max-width: 50%;
+  margin-top: 50px;
+}
+
+.left ul li {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: rgb(109, 109, 109);
+  margin-bottom: 18px;
+}
+
+.left ul li span {
+  color: rgb(41, 41, 41);
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.left a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding-bottom: 60px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 25px;
+}
+
+.tol-desc {
+  color: rgb(82, 82, 82);
+}
+
+.tools img {
+  width: 30px;
+  height: 30px;
+}
+
+.right img {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+}
+
+/*--------------------- Responsive Styles for Team Section Start ---------------------*/
+
+/*---------------------BIG SCREEN (1200px - 1400px)------------*/
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  #teamList {
+    padding: 80px 0;
+  }
+
+  .team-content h4 {
+    font-size: 45px;
+  }
+
+  .team-container {
+    gap: 15px;
+  }
+
+  .teams button {
+    padding: 14px 25px;
+  }
+
+  .team-bottom {
+    gap: 60px;
+  }
+
+  .left ul li {
+    font-size: 20px;
+  }
+
+  .tools {
+    gap: 40px;
+  }
+
+  .right img {
+    max-width: 700px;
+  }
+}
+
+/*---------------------FOR LAPTOP (992px - 1199px)-------*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .team-container {
+    gap: 12px;
+  }
+
+  .teams button {
+    padding: 13px 22px;
+  }
+
+  .team-bottom {
+    gap: 50px;
+  }
+
+  .left ul li {
+    font-size: 18px;
+  }
+
+  .tools {
+    gap: 35px;
+  }
+
+  .right img {
+    max-width: 650px;
+  }
+}
+
+/*---------------------FOR TABLET (768px - 991px)-------------*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .team-content h4 {
+    font-size: 36px;
+  }
+
+  .team-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .teams button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .team-bottom {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .left ul li {
+    font-size: 16px;
+  }
+
+  .tools {
+    gap: 30px;
+  }
+
+  .right img {
+    max-width: 90%;
+  }
+}
+
+/*---------------------FOR MOBILE (max-width: 767px)---------------------*/
+@media screen and (max-width: 767px) {
+  .team-content h4 {
+    font-size: 28px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .teams button {
+    padding: 10px 16px;
+    font-size: 14px;
+    /* width: 100%; */
+    text-align: center;
+  }
+
+  .team-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+  }
+
+  .left {
+    max-width: 100%;
+    /* text-align: center; */
+  }
+
+  .left ul li {
+    font-size: 16px;
+  }
+
+  .tools {
+    gap: 20px;
+    /* justify-content: center; */
+  }
+
+  .right img {
+    max-width: 100%;
+  }
+}
+
+/*---------------------FOR EXTRA SMALL MOBILE (max-width: 480px)--------------*/
+@media screen and (max-width: 480px) {
+  .team-content h4 {
+    font-size: 24px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .teams button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .team-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .left ul li {
+    font-size: 12px;
+  }
+
+  .tools {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .right img {
+    max-width: 100%;
+  }
+}
+
+/*---------------------Team CSS Section End------------------*/
+
+/*---------------------Trust Section CSS Start------------------*/
+
+#trust-section {
+  padding: 50px 20px;
+  background-color: #ffd02f;
+}
+.trust-container {
+  max-width: 1200px;
+  /* padding: 100px 0; */
+  margin: 0 auto;
+  text-align: center;
+}
+.trust-heading {
+  font-size: 42px;
+  font-weight: 400;
+  color: #000;
+}
+.trust-link {
+  color: #000;
+  text-decoration: underline;
+  display: block;
+  margin: 30px 0 30px;
+}
+.trust-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 0;
+  gap: 20px;
+  text-align: center;
+}
+.trust-item {
+  background: none;
+  padding: 20px;
+}
+.trust-title {
+  font-size: 52px;
+  font-weight: bold;
+  color: #000;
+}
+.trust-description {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .trust-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .trust-stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*---------------------Trust Section CSS End------------------*/
