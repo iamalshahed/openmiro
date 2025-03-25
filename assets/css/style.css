@@ -39,9 +39,11 @@ html {
 
 body {
   width: 100%;
-  position: relative;
-  overflow: hidden;
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -49,4 +51,129 @@ h1 {
   text-align: center;
   margin-top: 10rem;
   font-size: 4rem;
+}
+
+/* Footer Section */
+footer {
+  background: var(--blue-dark);
+  padding: 3rem 10% 1rem 10%;
+  color: var(--white);
+  margin-top: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.footer h4 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  display: block;
+  color: #ddd;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  transform: translateY(-3px) translateX(-4px);
+  color: var(--white);
+}
+
+.viweDemoBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.fBtn {
+  color: var(--white);
+  font-size: 16px;
+  border-bottom: 2px solid var(--white);
+}
+
+/* Footer Bottom */
+.footer_down {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #9b99af;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.left_f {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer_icon {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer_text {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+
+  .viweDemoBtn {
+    justify-content: center;
+  }
+
+  .footer_down {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_text,
+  .footer_logo {
+    flex-direction: column;
+    text-align: center;
+  }
 }
